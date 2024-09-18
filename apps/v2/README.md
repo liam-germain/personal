@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the repo for tmy upgraded personal site! This project represents a significant update to my online presence.
+Welcome to the repo for my upgraded personal site! This project represents a significant update to my online presence.
 
 **Last Updated:** September 2024
 

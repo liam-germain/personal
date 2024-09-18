@@ -24,7 +24,6 @@ export default function RootLayout({
             <li><a href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Home</a></li>
             <li><a href="/about" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About</a></li>
             <li><a href="/projects" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projects</a></li>
-            <li><a href="/writings" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Writings</a></li>
             <li><a href="/contact" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a></li>
           </ul>
         </nav>
