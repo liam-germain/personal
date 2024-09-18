@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "build": "turbo build",
+    "build": "tsc -b",
     "dev": "turbo dev",
-    "lint": "turbo lint",
+    "lint": "eslint . --ext .ts,.tsx",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
