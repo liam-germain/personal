@@ -1,24 +1,26 @@
+import { Timeline } from '../components/Timeline';
 
 export default function Page(): JSX.Element {
   return (
-    <main className="flex flex-col items-center justify-between min-h-screen p-24">
+    <div className="flex flex-col items-center justify-center min-h-full p-8 max-w-3xl mx-auto">
       {/* Brief description */}
       <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold">Liam Germain</h1>
-        <p className="mt-4 text-lg">
-          Welcome to my personal site. I'm currently working on several exciting projects and sharing my writings here.
+        <h1 className="text-4xl font-bold mb-4">Liam Germain</h1>
+        <p className="text-lg max-w-xl">
+          Welcome to my personal site. I'm currently working on several exciting projects. I am employed at Red Lodge Mountain and working on a startup called SimpliKeys.
         </p>
       </section>
 
-      {/* List of previous projects */}
+      {/* Current projects timeline */}
       <section className="w-full">
-        <h2 className="text-2xl font-semibold mb-6">Current Projects</h2>
-        <ul className="space-y-4">
-          <li>Project One - Description of project one.</li>
-          <li>Project Two - Description of project two.</li>
-          <li>Project Three - Description of project three.</li>
-        </ul>
+        <h2 className="text-2xl font-semibold mb-6 text-center">Current Projects</h2>
+        <Timeline
+          items={[
+            { title: 'Red Lodge Mountain', description: 'Current employment', link: '/projects/red-lodge-mountain' },
+            { title: 'SimpliKeys', description: 'Startup project', link: '/projects/simplikeys' },
+          ]}
+        />
       </section>
-    </main>
+    </div>
   );
 }
