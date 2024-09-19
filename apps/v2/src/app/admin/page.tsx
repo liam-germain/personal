@@ -1,4 +1,4 @@
-import { GetServerSideProps } from 'next';
+
 
 export default function Admin(): JSX.Element {
   return (
@@ -9,19 +9,3 @@ export default function Admin(): JSX.Element {
   );
 }
 
-// Example server-side protection
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const ip = context.req.socket.remoteAddress || '';
-  const allowedIpRange = ['your.vpn.ip.range'];
-
-  if (!allowedIpRange.includes(ip)) {
-    return {
-      redirect: {
-        destination: '/',
-        permanent: false,
-      },
-    };
-  }
-
-  return { props: {} };
-};
