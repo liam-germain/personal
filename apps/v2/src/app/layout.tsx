@@ -2,7 +2,7 @@ import "./globals.css";
 import "@repo/ui/styles.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-// import Link from "next/link";
+import { SpeedInsights } from "@vercel/speed-insights/next"// import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +29,7 @@ export default function RootLayout({
         </nav>
         <main className="flex-grow overflow-auto">
           {children}
+          <SpeedInsights />
         </main>
       </body>
     </html>
