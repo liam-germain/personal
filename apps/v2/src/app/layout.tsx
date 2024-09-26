@@ -1,8 +1,13 @@
-import "./globals.css";
-import "@repo/ui/styles.css";
+
+
+import "../../styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { SpeedInsights } from "@vercel/speed-insights/next"// import Link from "next/link";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Navbar } from '../components/navbar';
+
+import { ThemeProvider } from '../components/theme-provider';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,21 +21,23 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }): JSX.Element {
+
   return (
     <html lang="en" className="h-full">
       <body className={`${inter.className} flex flex-col h-full overflow-hidden`}>
-        <nav className="py-4 bg-gray-100 dark:bg-gray-800">
-          <ul className="flex justify-center space-x-6">
-            <li><a href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Home</a></li>
-            <li><a href="/about" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About</a></li>
-            <li><a href="/projects" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projects</a></li>
-            <li><a href="/contact" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a></li>
-          </ul>
-        </nav>
+
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
         <main className="flex-grow overflow-auto">
-          {children}
+            {children}
           <SpeedInsights />
-        </main>
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
