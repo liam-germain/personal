@@ -8,6 +8,7 @@ import { usePathname } from 'next/navigation'; // Import usePathname
 const projects = [
   { name: 'Simplikeys', href: '/projects/simplikeys' },
   { name: '4XP Collective', href: '/projects/4xp' },
+  { name: 'Red Lodge Mountain', href: '/projects/red-lodge-mountain' },
   // Add more projects here
 ];
 

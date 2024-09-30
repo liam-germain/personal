@@ -26,6 +26,11 @@ function ProjectsPage() {
           description="A partnership born in 233."
           link="/projects/4xp"
         />
+        <ProjectCard
+          title="Red Lodge Mountain"
+          description="A ski area located in Red Lodge, Montana."
+          link="/projects/red-lodge-mountain"
+        />
         {/* Add more ProjectCard components as needed */}
       </div>
     </div>
