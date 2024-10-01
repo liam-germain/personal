@@ -1,25 +1,24 @@
 
-export default function collectivePage() {
+export default function LocolPage() {
     return (
         <div className="container mx-auto px-4 py-8">
-            <h1 className="text-3xl font-bold mb-6">4XP Collective</h1>
+            <h1 className="text-3xl font-bold mb-6">Locol</h1>
 
             <div className="grid md:grid-cols-2 gap-8">
                 <div>
                     <p className="mb-4">
-                        I started this project with my freshman year roommate, Nicholas Fleisher, in 2021 after our first venture together failed. It is our app studio where we try to build products people want to use and share with their friends.
+                        I co-founded this company with three of my best friends from college at the start of our Junior Year in 2020. It was a social commerce platform for small businesses.
                     </p>
-
                 </div>
 
             </div>
             <a
-                href="https://4xp.org"
+                href="https://4xp.org/locol"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-green-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300"
             >
-                Visit 4XP Collective
+                Visit 4xp.org to learn more.
             </a>
 
         </div>
