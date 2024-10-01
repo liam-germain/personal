@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'My Projects | Your Name',
+  title: 'My Projects | Liam Germain',
   description: 'Explore my portfolio of projects and works.',
 };
 
@@ -30,6 +30,11 @@ function ProjectsPage() {
           title="Red Lodge Mountain"
           description="A ski area located in Red Lodge, Montana."
           link="/projects/red-lodge-mountain"
+        />
+        <ProjectCard
+          title="Locol"
+          description="A social commerce platform for small businesses."
+          link="/projects/locol"
         />
         {/* Add more ProjectCard components as needed */}
       </div>

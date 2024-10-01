@@ -11,6 +11,8 @@ export default function Page(): JSX.Element {
         <p className="text-lg max-w-xl mb-6">
           Welcome to my personal site. I'm currently working on several exciting projects. I am employed at Red Lodge Mountain and working on a startup called SimpliKeys.
         </p>
+        <p className="text-xl font-bold max-w-xl mb-6">* This site is under construction. *</p>
+
         {/* Social links */}
         <div className="flex justify-center space-x-4">
           <a href="https://x.com/liamail" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors">
