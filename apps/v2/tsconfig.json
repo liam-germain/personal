@@ -1,5 +1,5 @@
 {
-  "extends": "../../packages/config-typescript/base.json",
+  "extends": "@repo/typescript-config/nextjs.json",
   "compilerOptions": {
     "plugins": [
       {
@@ -7,11 +7,13 @@
       }
     ],
     "paths": {
-      "@repo/ui": ["../../packages/ui/src"]
+      "~/*": ["./*"]
     },
-    "incremental": true
   },
   "include": [
+    "next-env.d.ts",
+    "next.config.mjs",
+    "postcss.config.mjs",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
