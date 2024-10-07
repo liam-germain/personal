@@ -6,6 +6,10 @@
   "types": "./src/index.ts",
   "exports": {
     ".": "./src/index.ts",
+    "./components/*": [
+      "./src/components/*.tsx",
+      "./src/components/*.ts"
+    ],
     "./styles.css": "./src/styles.css"
   },
   "scripts": {
