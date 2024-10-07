@@ -1,12 +1,10 @@
 "use client"
 
 import React from 'react';
-import { useTheme } from "next-themes";
-import { ModeToggle } from './mode-toggle';
 import Link from 'next/link';
+import { ModeToggle } from './mode-toggle';
 
 export function Navbar(): JSX.Element {
-    const { theme } = useTheme();
 
     return (
         <nav className="py-4 bg-white dark:bg-gray-800 shadow-sm">
@@ -33,7 +31,7 @@ interface NavItemProps {
 function NavItem({ href, label }: NavItemProps): JSX.Element {
     return (
         <li>
-            <Link href={href} className="text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors duration-200">
+            <Link className="text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors duration-200" href={href}>
                 {label}
             </Link>
         </li>

@@ -14,10 +14,10 @@ export default function RLMpage() {
 
             </div>
             <a
-                href="https://redlodgemountain.com"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300"
+                href="https://redlodgemountain.com"
+                rel="noopener noreferrer"
+                target="_blank"
             >
                 Visit Red Lodge Mountain
             </a>

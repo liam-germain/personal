@@ -9,7 +9,7 @@ export default function Page(): JSX.Element {
       <section className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-4">Liam Germain</h1>
         <p className="text-lg max-w-xl mb-6">
-          Welcome to my personal site. I'm currently working on several exciting projects. I am employed at Red Lodge Mountain and working on a startup called SimpliKeys.
+          Welcome to my personal site. I am currently working on several exciting projects. I am employed at Red Lodge Mountain and working on a startup called SimpliKeys.
         </p>
         <p className="text-xl font-bold max-w-xl mb-6">* This site is under construction. *</p>
 

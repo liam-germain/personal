@@ -1,6 +1,6 @@
 import React from 'react';
-import "./../styles/dist.css";
-import "./../styles/globals.css"
+import './../styles/dist.css';
+import './../styles/globals.css';
 import { Analytics } from './components/Analytics';
 
 export default function RootLayout({
@@ -14,11 +14,9 @@ export default function RootLayout({
         <title>LMG</title>
       </head>
       <body className="overflow-y-scroll bg-offwhite">
-       {children}
-       <Analytics />
-
+        {children}
+        <Analytics />
       </body>
     </html>
   );
 }
-

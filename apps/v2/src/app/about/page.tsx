@@ -5,7 +5,7 @@ export default function About(): JSX.Element {
     <>
       <Head>
         <title>About | Personal Site</title>
-        <meta name="description" content="Learn more about me." />
+        <meta content="Learn more about me." name="description" />
       </Head>
       <main className="p-8">
         <h1 className="text-3xl font-bold">About</h1>

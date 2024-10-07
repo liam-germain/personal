@@ -1,6 +1,7 @@
 # DEPRECATED SEPTEMBER 2024
 
 # liam.bio
+
 Welcome to my personal website!
 
 My name is Liam Germain and I am a senior at the University of Pennsylvania. I have always been passionate about technology and the endless possibilities it brings. That's why I love to code!
@@ -24,4 +25,3 @@ Thank you for visiting my website. I hope you find something here that interests
 
 Best regards,
 Liam Germain + ChatGPT
-

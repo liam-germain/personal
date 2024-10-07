@@ -4,7 +4,6 @@ import React from 'react';
 import Box from './components/Box';
 import Cal from '@calcom/embed-react';
 
-
 // export default function Page() {
 //   return (
 //     <>
@@ -46,7 +45,6 @@ import Cal from '@calcom/embed-react';
 //   );
 // }
 
-
 export default function Page() {
   return (
     <>
@@ -56,9 +54,9 @@ export default function Page() {
             <Box>
               <h1 className="text-3xl font-bold">Hi, Im Liam Germain</h1>
               <p>
-
-                I am currently working at SimpliKeys. I love to build. The future is incredibly exciting and weird. V2 of this site is coming soon. This one is a bit of a mess and is not good.
-
+                I am currently working at SimpliKeys. I love to build. The
+                future is incredibly exciting and weird. V2 of this site is
+                coming soon. This one is a bit of a mess and is not good.
               </p>
             </Box>
             <Box>
@@ -66,21 +64,50 @@ export default function Page() {
             </Box>
           </div>
           <div className="lg:col-span-5 space-y-4 lg:space-y-4">
-            <Box link="/projects" hoverEffect className="flex items-center justify-center lg:w-full">
+            <Box
+              link="/projects"
+              hoverEffect
+              className="flex items-center justify-center lg:w-full"
+            >
               <h1 className="text-4xl font-bold">My Projects</h1>
             </Box>
 
             <div />
-            <Box link="https://4xp.org" hoverEffect className="flex items-center justify-center lg:w-full">
+            <Box
+              link="https://4xp.org"
+              hoverEffect
+              className="flex items-center justify-center lg:w-full"
+            >
               <h1 className="text-4xl font-bold">4XP Holdings</h1>
             </Box>
 
             <div />
             <Box className="flex items-center justify-center lg:w-full">
               <div className="flex items-center justify-center space-x-4 mt-2">
-                <a href="https://x.com/liamail" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-600 text-white font-bold rounded">Twitter</a>
-                <a href="https://linkedin.com/in/liamgermain" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-400 text-white font-bold rounded">LinkedIn</a>
-                <a href="https://github.com/liam-germain" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-gray-700 text-white font-bold rounded">GitHub</a>
+                <a
+                  href="https://x.com/liamail"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-blue-600 text-white font-bold rounded"
+                >
+                  Twitter
+                </a>
+                <a
+                  href="https://linkedin.com/in/liamgermain"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-blue-400 text-white font-bold rounded"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href="https://github.com/liam-germain"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-gray-700 text-white font-bold rounded"
+                >
+                  GitHub
+                </a>
               </div>
             </Box>
           </div>
@@ -89,8 +116,3 @@ export default function Page() {
     </>
   );
 }
-
-
-
-
-

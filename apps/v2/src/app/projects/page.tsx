@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -17,24 +17,24 @@ function ProjectsPage() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <ProjectCard
-          title="SimpliKeys"
           description="Enterprise Identity Access Management Monitoring Layer."
           link="/projects/simplikeys"
+          title="SimpliKeys"
         />
         <ProjectCard
-          title="4XP Collective"
           description="A partnership born in 233."
           link="/projects/4xp"
+          title="4XP Collective"
         />
         <ProjectCard
-          title="Red Lodge Mountain"
           description="A ski area located in Red Lodge, Montana."
           link="/projects/red-lodge-mountain"
+          title="Red Lodge Mountain"
         />
         <ProjectCard
-          title="Locol"
           description="A social commerce platform for small businesses."
           link="/projects/locol"
+          title="Locol"
         />
         {/* Add more ProjectCard components as needed */}
       </div>
@@ -50,14 +50,14 @@ interface ProjectCardProps {
 
 function ProjectCard({ title, description, link }: ProjectCardProps) {
   return (
-    <Link href={link} className="block">
+    <Link className="block" href={link}>
       <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow h-full">
         <h2 className="text-2xl font-semibold mb-3">{title}</h2>
         <p className="text-gray-600 mb-4">{description}</p>
         <span className="text-blue-600 hover:underline inline-flex items-center">
           Learn more
           <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
           </svg>
         </span>
       </div>

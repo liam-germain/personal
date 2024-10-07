@@ -13,10 +13,10 @@ export default function LocolPage() {
 
             </div>
             <a
-                href="https://4xp.org/locol"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="inline-block bg-green-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300"
+                href="https://4xp.org/locol"
+                rel="noopener noreferrer"
+                target="_blank"
             >
                 Visit 4xp.org to learn more.
             </a>

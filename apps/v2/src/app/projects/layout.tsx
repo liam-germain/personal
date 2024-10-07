@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 'use client';
 
 import Link from 'next/link';
@@ -31,8 +32,8 @@ function ProjectsLayout({ children }: { children: React.ReactNode }) {
               {!isCollapsed && <h2 className="text-lg font-semibold">Projects</h2>}
             </Link>
             <button
-              onClick={() => setIsCollapsed(!isCollapsed)}
               className="p-1 rounded-full hover:bg-gray-200"
+              onClick={() => { setIsCollapsed(!isCollapsed); }}
             >
               {isCollapsed ? <ChevronRightIcon /> : <ChevronLeftIcon />}
             </button>
@@ -42,10 +43,10 @@ function ProjectsLayout({ children }: { children: React.ReactNode }) {
               {projects.map((project) => (
                 <li key={project.href}>
                   <Link
-                    href={project.href}
                     className={`block px-4 py-2 hover:bg-gray-200 ${
                       isCollapsed ? 'text-center' : ''
                     }`}
+                    href={project.href}
                   >
                     {isCollapsed ? project.name[0] : project.name}
                   </Link>
