@@ -5,10 +5,9 @@
   "compilerOptions": {
     "plugins": [{ "name": "next" }],
     "allowJs": true,
-    "declaration": false,
-    "declarationMap": false,
-    "incremental": true,
+    "noEmit": true,
     "jsx": "preserve",
+    "moduleResolution": "Bundler",
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
     "resolveJsonModule": true,

@@ -4,7 +4,10 @@ import { FaXTwitter } from 'react-icons/fa6';
 // import { Button } from './components/ui/Button';
 import { ModeToggle } from '../components/mode-toggle';
 
-import { Button } from '../components/button';
+//import { Button } from '../components/button';
+
+import { Button } from '@repo/ui/components/ui/button';
+
 import Link from 'next/link';
 
 export default function Page(): JSX.Element {
@@ -42,20 +45,7 @@ export default function Page(): JSX.Element {
           ]}
         />
       </section>
-      <ModeToggle />
 
-      {/* 3D Contact Button */}
-      <Link href="/contact" className="mt-8 mb-4">
-        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg transform transition-all duration-150 ease-in-out hover:scale-105 active:scale-95 active:shadow-md">
-          Contact Me
-        </button>
-      </Link>
-
-
-      Example usage of the Button
-      <section className="mt-8">
-        <Button variant="default" size="default">Click me</Button>
-      </section>
     </div>
   );
 }
