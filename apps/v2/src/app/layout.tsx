@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Navbar } from '../components/navbar';
-
 import { ThemeProvider } from '../components/theme-provider';
 
 
@@ -22,14 +21,14 @@ export default function RootLayout({
 }): JSX.Element {
 
   return (
-    <html lang="en" className="h-full">
-      <body className={`flex flex-col h-full overflow-hidden`}>
+    <html className="h-full" lang="en">
+      <body className="flex flex-col h-full overflow-hidden">
 
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
-          enableSystem
           disableTransitionOnChange
+          enableSystem
         >
           <Navbar />
         <main className="flex-grow overflow-auto">

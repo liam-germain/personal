@@ -1,14 +1,6 @@
-import { Timeline } from '../components/Timeline';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
-// import { Button } from './components/ui/Button';
-import { ModeToggle } from '../components/mode-toggle';
-
-//import { Button } from '../components/button';
-
-import { Button } from '@repo/ui/components/ui/button';
-
-import Link from 'next/link';
+import { Timeline } from '../components/Timeline';
 
 export default function Page(): JSX.Element {
   return (
@@ -23,13 +15,13 @@ export default function Page(): JSX.Element {
 
         {/* Social links */}
         <div className="flex justify-center space-x-4">
-          <a href="https://x.com/liamail" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors">
+          <a className="text-gray-600 hover:text-gray-800 transition-colors" href="https://x.com/liamail" rel="noopener noreferrer" target="_blank">
             <FaXTwitter className="w-6 h-6" />
           </a>
-          <a href="https://github.com/liam-germain" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors">
+          <a className="text-gray-600 hover:text-gray-800 transition-colors" href="https://github.com/liam-germain" rel="noopener noreferrer" target="_blank">
             <FaGithub className="w-6 h-6" />
           </a>
-          <a href="https://www.linkedin.com/in/liamgermain" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors">
+          <a className="text-gray-600 hover:text-gray-800 transition-colors" href="https://www.linkedin.com/in/liamgermain" rel="noopener noreferrer" target="_blank">
             <FaLinkedin className="w-6 h-6" />
           </a>
         </div>
