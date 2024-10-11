@@ -32,6 +32,11 @@ function ProjectsPage() {
           title="Red Lodge Mountain"
         />
         <ProjectCard
+          description="This website you are looking at."
+          link="/projects/this-site"
+          title="This Website"
+        />
+        <ProjectCard
           description="A social commerce platform for small businesses."
           link="/projects/locol"
           title="Locol"

@@ -1,34 +1,52 @@
-/* eslint-disable react/no-array-index-key */
-import Link from 'next/link';
+import { FC } from 'react';
+import { ScrollArea } from '@radix-ui/react-scroll-area';
+import { experiences, type ExperienceItem } from '../data/experience';
 
-interface TimelineItem {
-  title: string;
-  description: string;
-  link: string;
-}
-
-interface TimelineProps {
-  items: TimelineItem[];
-}
-
-export function Timeline({ items }: TimelineProps): JSX.Element {
-  return (
-    <ul className="relative border-l border-gray-200 dark:border-gray-700">
-      {items.map((item, index) => (
-        <li className="mb-4 ml-2" key={index}>
-          <span className="absolute flex items-center justify-center w-2 h-2 bg-blue-100 rounded-full -left-1 ring-1 ring-white dark:ring-gray-900 dark:bg-blue-900">
-            <span className="w-1 h-1 bg-blue-800 rounded-full dark:bg-blue-300" />
-          </span>
-          <Link className="group block pl-1" href={item.link}>
-            <h3 className="mb-0.5 text-sm font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-              {item.title}
-            </h3>
-            <p className="text-xs font-normal text-gray-500 dark:text-gray-400">
-              {item.description}
-            </p>
-          </Link>
-        </li>
-      ))}
-    </ul>
+const Timeline: FC = () => {
+  const sortedExperiences = [...experiences].sort((a, b) => 
+    (new Date(b.startDate)).getTime() - (new Date(a.startDate)).getTime()
   );
+
+  return (
+    <ScrollArea className="w-full h-[calc(100vh-4rem)]">
+      <div className="relative w-full p-4 space-y-8">
+        <div className="space-y-8 pl-4 border-l-2 border-gray-200 dark:border-gray-700">
+          {sortedExperiences.map((experience) => (
+            <ExperienceItem key={experience.id} experience={experience} />
+          ))}
+        </div>
+      </div>
+    </ScrollArea>
+  );
+};
+
+interface ExperienceItemProps {
+  experience: ExperienceItem;
 }
+
+const ExperienceItem: FC<ExperienceItemProps> = ({ experience }) => {
+  const isOngoing = !experience.endDate;
+
+  return (
+    <div className={`relative pb-4 ${isOngoing ? 'text-primary' : ''}`}>
+      <div className="absolute -left-6 mt-1 w-3 h-3 bg-gray-200 dark:bg-gray-700 rounded-full border-4 border-white dark:border-gray-900" />
+      <h3 className="font-bold text-lg">{experience.company}</h3>
+      <p className="text-sm text-muted-foreground">
+        {new Date(experience.startDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} -{' '}
+        {experience.endDate 
+          ? new Date(experience.endDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) 
+          : 'Present'}
+      </p>
+      <p className="mt-2 text-sm">{experience.description}</p>
+      <div className="flex flex-wrap gap-2 mt-2">
+        {experience.technologies.map((tech, index) => (
+          <span key={index} className="px-2 py-1 bg-secondary text-secondary-foreground text-xs font-medium rounded-full">
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Timeline;
