@@ -15,6 +15,7 @@ export function Navbar(): JSX.Element {
                         <NavItem href="/about" label="About" />
                         <NavItem href="/projects" label="Projects" />
                         <NavItem href="/experience" label="Experience" />
+                        <NavItem href="/random" label="Random" />
                         <NavItem href="/contact" label="Contact" />
                     </ul>
                     <ModeToggle />
