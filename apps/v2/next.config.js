@@ -3,7 +3,7 @@ const nextConfig = {
   // ... other configurations
 
   images: {
-    domains: ['energyandhumanity.com'],
+    domains: ['energyandhumanity.com', 'proskua.com', 'kuntz.io', 'framerusercontent.com', 'ja.mt', 'www.colineckert.dev'],
   },
 
   // ... other configurations

@@ -1,11 +1,8 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { LinkPreview } from '../../../components/LinkPreview';
 
 const coolWebsites = [
   { name: 'Energy and Humanity', url: 'https://energyandhumanity.com/', description: 'A site about the future of energy and how it will interact with humanity.' },
-  { name: 'Example Cool Site 2', url: 'https://example2.com', description: 'Another cool site description.' },
-  // Add more websites as needed
 ];
 
 export const metadata = {

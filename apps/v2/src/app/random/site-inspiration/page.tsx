@@ -1,23 +1,24 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { LinkPreview } from '../../../components/LinkPreview';
 
 const coolWebsites = [
-  // { name: 'Energy and Humanity', url: 'https://ja.mt/', description: 'A site about the future of energy and how it will interact with humanity.' },
-  // { name: 'Example Cool Site 2', url: 'https://www.colineckert.dev, description: 'Another cool site description.' },
-  // Add more websites as needed
+  { name: 'Jace', url: 'https://ja.mt/', description: '' },
+  { name: 'Colin Eckert', url: 'https://www.colineckert.dev', description: '' },
+  { name: 'Proskua', url: 'https://proskua.com/', description: '' },
+  { name: 'Kuntz', url: 'http://kuntz.io/', description: '' },
+  { name: "Bilgi Karan", url: 'https://www.bilgikaran.com/', description: '' },
 ];
 
 export const metadata = {
   title: 'Site Inspiration | Random | Personal Site',
-  description: 'A curated list of cool websites I think are worth checking out.',
+  description: 'Websites that inspired this one..',
 };
 
 export default function SiteInspiration(): JSX.Element {
   return (
     <main className="container mx-auto p-8">
       <h1 className="text-4xl font-bold mb-6">Site Inspiration</h1>
-      <p className="mb-8">Here's a list of websites I think are really cool:</p>
+      <p className="mb-8">I really admire when someone else puts in the time to create a beautiful website. I think they are often times one of the best reflections of an individual's creativity and personality. This is a list of websites that have inspired me.</p>
       
       <ul className="space-y-8">
         {coolWebsites.map((site) => (
