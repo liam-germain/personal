@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { LinkPreview } from '../../../components/LinkPreview';
 
+import type { JSX } from "react";
+
 const coolWebsites = [
   { name: 'Jace', url: 'https://ja.mt/', description: '' },
   { name: 'Colin Eckert', url: 'https://www.colineckert.dev', description: '' },

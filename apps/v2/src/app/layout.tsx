@@ -6,6 +6,10 @@ import { ThemeProvider } from '../components/theme-provider';
 
 
 
+import type { JSX } from "react";
+
+
+
 export const metadata: Metadata = {
   title: "Liam Germain's Personal Site",
   description: "My personal site that I use to share my projects and ideas.",

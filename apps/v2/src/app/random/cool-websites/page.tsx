@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { LinkPreview } from '../../../components/LinkPreview';
 
+import type { JSX } from "react";
+
 const coolWebsites = [
   { name: 'Energy and Humanity', url: 'https://energyandhumanity.com/', description: 'A site about the future of energy and how it will interact with humanity.' },
 ];

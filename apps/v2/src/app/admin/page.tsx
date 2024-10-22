@@ -1,5 +1,7 @@
 
 
+import type { JSX } from "react";
+
 export default function Admin(): JSX.Element {
   return (
     <main className="p-8">

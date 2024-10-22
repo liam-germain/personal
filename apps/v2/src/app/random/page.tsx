@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
+import type { JSX } from "react";
+
 const randomTopics = [
   { title: 'Cool Websites', href: '/random/cool-websites' },
   { title: 'Site Inspiration', href: '/random/site-inspiration' },
