@@ -5,6 +5,7 @@ import type { JSX } from "react";
 
 const coolWebsites = [
   { name: 'Energy and Humanity', url: 'https://energyandhumanity.com/', description: 'A site about the future of energy and how it will interact with humanity.' },
+  { name: '507 Mechanical Motion', url: 'https://www.fivehundredseven.com/', description: 'A site about a friend and a great developer.' },
 ];
 
 export const metadata = {
@@ -12,11 +13,11 @@ export const metadata = {
   description: 'A curated list of cool websites I think are worth checking out.',
 };
 
-export default function CoolWebsites(): JSX.Element {
+export default function CoolProjects(): JSX.Element {
   return (
     <main className="container mx-auto p-8">
-      <h1 className="text-4xl font-bold mb-6">Cool Websites</h1>
-      <p className="mb-8">Here's a list of websites I think are really cool:</p>
+      <h1 className="text-4xl font-bold mb-6">Cool Projects</h1>
+      <p className="mb-8">There are so many cool things that people are able to create out there and this page hopes to capture some of them. This list started as just cool website projects I thought were interesting but it has since expanded to include all sorts of projects.</p>
       
       <ul className="space-y-8">
         {coolWebsites.map((site) => (

@@ -1,14 +1,14 @@
-import Head from 'next/head';
 
 import type { JSX } from "react";
+
+export const metadata = {
+  title: 'About | Personal Site',
+  description: 'Learn more about me.',
+};
 
 export default function About(): JSX.Element {
   return (
     <>
-      <Head>
-        <title>About | Personal Site</title>
-        <meta content="Learn more about me." name="description" />
-      </Head>
       <main className="p-8">
         <h1 className="text-3xl font-bold">About</h1>
         <p>Welcome to the About page.</p>

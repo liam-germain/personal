@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Link from 'next/link';
 
 import type { JSX } from "react";
@@ -18,10 +17,6 @@ export const metadata = {
 export default function Random(): JSX.Element {
     return (
         <>
-            <Head>
-                <title>About | Personal Site</title>
-                <meta content="Just Random Stuff." name="description" />
-            </Head>
             <main className="container mx-auto p-8">
                 <h1 className="text-4xl font-bold mb-6">Random Stuff</h1>
                 <p className="mb-8">Random things I find interesting.</p>
