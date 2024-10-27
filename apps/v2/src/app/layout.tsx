@@ -6,7 +6,7 @@ import { ThemeProvider } from '../components/theme-provider';
 
 
 
-import type { JSX } from "react";
+// import type { JSX } from "react";
 
 
 
@@ -15,11 +15,41 @@ export const metadata: Metadata = {
   description: "My personal site that I use to share my projects and ideas.",
 };
 
+// export default function RootLayout({
+//   children,
+// }: {
+//   children: React.ReactNode;
+// }): JSX.Element {
+
+//   return (
+//     <html className="h-full" lang="en">
+//       <body className="flex flex-col h-full overflow-hidden">
+
+//         <ThemeProvider
+//           attribute="class"
+//           defaultTheme="system"
+//           disableTransitionOnChange
+//           enableSystem
+//         >
+//           <Navbar />
+//           <main className="flex-grow overflow-auto">
+//             {children}
+//           </main>
+//           {/* Replace SpeedInsights component with a function call */}
+//           <SpeedInsights />
+//         </ThemeProvider>
+//       </body>
+//     </html>
+//   );
+// }
+
+
+
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}): JSX.Element {
+}>) {
 
   return (
     <html className="h-full" lang="en">
@@ -32,10 +62,11 @@ export default function RootLayout({
           enableSystem
         >
           <Navbar />
-        <main className="flex-grow overflow-auto">
+          <main className="flex-grow overflow-auto">
             {children}
-          <SpeedInsights />
           </main>
+          {/* Replace SpeedInsights component with a function call */}
+          {/* <SpeedInsights /> */}
         </ThemeProvider>
       </body>
     </html>

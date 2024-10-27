@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { ScrollArea } from '@radix-ui/react-scroll-area';
+import { ScrollArea } from '@repo/ui/components/ui/scroll-area';
 import { experiences, type ExperienceItem } from '../data/experience';
 
 const Timeline: FC = () => {
