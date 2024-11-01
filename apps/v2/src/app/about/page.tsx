@@ -11,7 +11,7 @@ export default function About(): JSX.Element {
     <>
       <main className="p-8">
         <h1 className="text-3xl font-bold">About</h1>
-        <p>Hello, my name is Liam Germain.</p>
+        <p>Hello, my name is Liam Germain. I am originally from Ennis, MT.</p>
       </main>
     </>
   );
