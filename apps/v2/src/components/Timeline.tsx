@@ -2,12 +2,16 @@ import { FC } from 'react';
 import { ScrollArea } from '@repo/ui/components/ui/scroll-area';
 import { experiences, type ExperienceItem } from '../data/experience';
 
+
+
+// Update the component to properly use ScrollArea
 const Timeline: FC = () => {
-  const sortedExperiences = [...experiences].sort((a, b) => 
+  const sortedExperiences = [...experiences].sort((a, b) =>
     (new Date(b.startDate)).getTime() - (new Date(a.startDate)).getTime()
   );
 
   return (
+    <>
     <ScrollArea className="w-full h-[calc(100vh-4rem)]">
       <div className="relative w-full p-4 space-y-8">
         <div className="space-y-8 pl-4 border-l-2 border-gray-200 dark:border-gray-700">
@@ -16,9 +20,28 @@ const Timeline: FC = () => {
           ))}
         </div>
       </div>
-    </ScrollArea>
+      </ScrollArea>
+    </>
   );
 };
+
+// const Timeline: FC = () => {
+//   const sortedExperiences = [...experiences].sort((a, b) => 
+//     (new Date(b.startDate)).getTime() - (new Date(a.startDate)).getTime()
+//   );
+
+//   return (
+//     <ScrollArea className="w-full h-[calc(100vh-4rem)]">
+//       <div className="relative w-full p-4 space-y-8">
+//         <div className="space-y-8 pl-4 border-l-2 border-gray-200 dark:border-gray-700">
+//           {sortedExperiences.map((experience) => (
+//             <ExperienceItem key={experience.id} experience={experience} />
+//           ))}
+//         </div>
+//       </div>
+//     </ScrollArea>
+//   );
+// };
 
 interface ExperienceItemProps {
   experience: ExperienceItem;
